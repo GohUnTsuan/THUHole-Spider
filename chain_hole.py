@@ -17,7 +17,7 @@ header = {
 url = 'https://tapi.thuhole.com/v3/contents/post/detail?pid={0:d}&device=0&v=v3.0.6-452742'
 url1 = 'https://i.thuhole.com/'
 
-root = '/Users/apple/Documents/Coding/python_practice/THUHole/hole/'
+root = 'C:/Users/wuwenquan/Documents/GitHub/THUHole-Spider/img'
 
 class Hole:
     def __init__(self,pid,url,header,root,url1) -> None:
@@ -53,8 +53,8 @@ class Hole:
         return num
     
     def get_img(hole):
-        data = hole.get_json()['data']
-        post = hole.get_json()['post']
+        # data = hole.get_json()['data']
+        # post = hole.get_json()['post']
         num = 0
         num = hole.download_img(post,num,'pid')
         for reply in data:

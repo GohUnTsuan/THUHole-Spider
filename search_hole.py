@@ -13,11 +13,11 @@ header = {
 }
 url1 = 'https://tapi.thuhole.com/v3/contents/search?pagesize=50&page={0:d}&keywords={1:s}&device=0&v=v3.0.6-452728' #分别为爬取页数与搜索关键词，无法爬取回复
 
-url = url1.format(1,'%23nsfw') #在此处修改，默认为nsfw,性相关代码为'%23%E6%80%A7%E7%9B%B8%E5%85%B3'
+url = url1.format(1,'%23%E6%80%A7%E7%9B%B8%E5%85%B3') #在此处修改，默认为nsfw,性相关代码为'%23%E6%80%A7%E7%9B%B8%E5%85%B3'
 
 
 url2 = 'https://i.thuhole.com/'
-root = '/Users/apple/Documents/Coding/python_practice/THUHole/nsfw/'
+root = 'C:/Users/wuwenquan/Documents/GitHub/THUHole-Spider/img'
 
 r_json = requests.get(url,headers = header).json()
         
